@@ -11,48 +11,177 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: #112030;
     font-size: 1em;
     line-height: 1.4;
 }
 body { 
-    background-image: url(/img/yosemite.jpg);
     background-repeat:no-repeat;
     background-size: cover;
     background-position:center center;
     background-attachment: fixed;
 }
-#header {
-    font-family: 'Sedgwick Ave Display', cursive;
-    border-right: #6d6d6d;
-    text-align: center;
-    font-size: 22px;
-}
-#nav {
-    width: 100%;
+.header video {
     float: left;
-    margin: 0 0 3em 0;
-    padding: 0;
-    list-style: none;
-    background-color: #6d6d6d;
-    border-bottom: 1px solid #ccc;
-    border-top: 1px solid #ccc;
+    width: 300px;
+    height: 189px;
+   
 }
-#nav li {
-    float: left;
-    }
-#nav li a {
-    display: block;
-    padding: 8px 15px;
+.aboutdropbtn {
+    -moz-border-radius:5px;
+    -khtml-border-radius: 50px;
+    -webkit-border-radius:5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: transparent;
+    padding: 20px;
     text-decoration: none;
-    color: #f7f4f4;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+    font-size: 25px;
+    color: #fff;
+    border-right: 1px solid #ccc;
+    font-family: 'Sedgwick Ave Display', cursive;
+    cursor: pointer;
+    border-style: none;
+}
+.aboutdropdown {
+    position: relative;
+    display: inline-block
+}
+.aboutdropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.aboutdropdown-content a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+    color: coral;
     border-right: 1px solid #ccc;
     font-family: 'Sedgwick Ave Display', cursive;
 }
-#nav li a:hover {
-    color: #c00;
+.aboutdropdown:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: coral;
     background-color: #fff;
 }
+.aboutdropdown:hover .aboutdropdown-content {
+    display: block;
+}
+.aboutdropdown:hover .aboutdropbtn {
+    color: coral;
+}
+.doowikidropbtn {
+    -moz-border-radius:5px;
+    -khtml-border-radius: 50px;
+    -webkit-border-radius:5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: transparent;
+    padding: 20px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+    font-size: 25px;
+    color: #fff;
+    border-right: 1px solid #ccc;
+    font-family: 'Sedgwick Ave Display', cursive;
+    cursor: pointer;
+    border-style: none;
+}
+.doowikidropdown {
+    position: relative;
+    display: inline-block
+}
+.doowikidropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.doowikidropdown-content a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+    color: coral;
+    border-right: 1px solid #ccc;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+.doowikidropdown:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: coral;
+    background-color: #fff;
+}
+.doowikidropdown:hover .doowikidropdown-content {
+    display: block;
+}
+.doowikidropdown:hover .doowikidropbtn {
+    color: coral;
+}
+.maincontent {
+    text-align: center;
+    padding: 75px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 120px;
+    color: coral;
+}
+#nav {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+    mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+    margin: 0 auto;
+    padding: 20px 1em;
+     -moz-border-radius:5px;
+    -khtml-border-radius: 50px;
+    -webkit-border-radius:5px;
+    border-radius: 5px;
+    text-decoration: none;
+    background: transparent;
+}
+nav ul {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+    width: 100%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+#nav li {
+    display: inline-block;
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+    }
+#nav li a {
+    width: auto;
+    min-width: 100px;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+    font-size: 25px;
+    color: #fff;
+    border-right: 1px solid transparent;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+#nav li a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    color: coral;
+    background-color: #fff;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -227,8 +356,24 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 760px) {
     /* Style adjustments for viewports that meet the condition */
+ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
 }
 
 @media print,
@@ -316,3 +461,30 @@ textarea {
         page-break-after: avoid;
     }
 }
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
